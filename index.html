@@ -7,8 +7,8 @@
 <body>
 	<h1>Teams OwOd</h1>	
 	<input id="eventcode" type = "text" value = "2023cass" disabled = "true"><br/>
-	<input id="match" placeholder = "Match #" type = "text"><br/>
-	<form>
+	<input id="match" placeholder = "Match #" type = "text" onchange="teamPrint()"><br/>
+	<form onchange="teamPrint()">
 		<label for="robot">Robot:</label>
 		<select name="robot" id="robot">
 			<option value="r1"> Red 1</option>
@@ -19,7 +19,7 @@
 			<option value="b3"> Blue 3</option>
 		</select>
 	</form>
-	<form>
+	<form onchange="teamPrint()">
 		<label for="level">Match Level:</label>
 		<select name="level" id="level">
 			<option value="qm"> Qualification</option>
